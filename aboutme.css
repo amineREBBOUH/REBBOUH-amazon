@@ -1,0 +1,57 @@
+
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(to right,SteelBlue,#FFFAFA) ;
+}
+.parent{
+    width: 200px;
+    height: 200px;
+  background-image: url("me.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+    border-radius: 50%;
+   
+ 
+   
+}
+.child{
+    width: 185px;
+    height: 185px;
+   
+  background-color: transparent;
+  color: rgb(3, 3, 3);
+  border: 10px solid transparent;
+  border-radius: 50%;
+  border-top-color: #448ca6;
+  border-bottom-color: #d44f4f;
+animation: love 5s infinite;
+
+   
+}
+span{
+    color: rgba(255, 0, 0, 0.801);
+}
+li{
+    color: green;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(to left,rgb(228, 57, 57),rgb(81, 190, 81));
+    padding: 5px;
+}
+@keyframes love {
+    100%{
+        transform: rotate(360deg);
+    }
+}

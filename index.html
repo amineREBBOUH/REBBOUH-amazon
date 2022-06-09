@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="Icon" href="amazon_logo.png">
+    <title>REBBOUH Amine</title>
+</head>
+
+<body>
+
+    <div class="loading1">
+        <img src="amazon_logo.png" alt="" width="20%">
+
+        <div class="loading">
+            <div class="r1"></div>
+            <div class="r2"></div>
+            <div class="r3"></div>
+            <div class="r4"></div>
+        </div>
+    </div>
+
+    <div class="conte">
+
+        <header>
+            <div><img src="amazon_logo.png" alt="" width="80px"></div>
+            <div class="nav-input">
+                <select name="all4" id="">
+            <option value="">all</option>
+            <option value="">india</option>
+            <option value="">assia</option>
+            <option value="">turkia</option>
+        </select>
+                <input type="text" name="" id="text" placeholder="what is loking for">
+                <input type="button" value="Go" id="search">
+            </div>
+            <div class="nav-home">
+                <ul>
+                    <li> <a href="">Home</a> </li>
+                    <li><a href="me/aboutme.html">About me</a> </li>
+                    <li><button onclick="login()">login && SingUp  </button> </li>
+
+                </ul>
+            </div>
+            <button id="btn" onclick="slider();"><i class="fa fa-bars" style="font-size: 32px;"></i></button>
+        </header>
+        <div class="div1">
+            <ul id='div1'>
+                <li>
+                    <a href=""> <button> <i class="fa fa-bars" ></i> tous</button> </a>
+                </li>
+                <li> <a href="#sport"> Sport</a></li>
+                <li><a href="#head2"> Musicue</a></li>
+                <li><a href="#too">Service client</a> </li>
+            </ul>
+        </div>
+        <div class="div2"> <img src="pict/ukrane.png" width="3%"> votre don aide - Soutenez les personnes touchées par la guerre en Ukraine. En savoir plus</div>
+        <div style="display: flex;justify-content: center;align-items: center;">
+            <div id="login">
+                <button onclick="hide()" id="button">	&#9747</button>
+                <div style="display: flex;
+justify-content: center;"> <img src="amazon_logo.png" alt="" width=30%></div>
+                <form action="" method="get">
+                    <div id="form1">
+                        <h3>Loginin</h3>
+                        <label for="email"> enter Adresse e-mail </label><br>
+                        <input type="email" name="" id="email" class="inpu"><br>
+                        <label for="password">enter mote de passe</label><br>
+                        <input type="password" name="" id="password" class="inpu" required><br> <br>
+                        <button type="submit" class="inpu sumbit" onclick="alertlogin()">Loginin</button><br> <br>
+                        <button type="reset" class="inpu rest" onclick="alertrest()">reset</button><br> <br>
+                        <a href="" style="color: red; position: absolute;bottom: 0;right: 0;"> forget my password</a>
+                    </div>
+                    <div id="form2">
+                        <h3>SingUp</h3>
+                        <label for="a1">enter user name</label><br>
+                        <input type="text" name="" id="a1" class="singup inpu"><br>
+                        <label for="a2">enter first name</label><br>
+                        <input type="text" name="" id="a2" class="singup inpu"><br>
+                        <label for="a3">enter list name</label><br>
+                        <input type="text" name="" id="a3" class="singup inpu"><br>
+                        <label for="a4">enter your Email</label><br>
+                        <input type="email" name="" id="a4" class="singup inpu"><br> <br>
+                        <button type="submit" class="inpu sumbit" onclick="alertsingup()">SingUp</button><br> <br>
+                        <button type="reset" class="inpu rest" onclick="alertrest()">reset</button><br> <br>
+                    </div>
+
+                    <input type="radio" name="cv" id="f1" onclick="hida()" checked>Loginin <br>
+                    <input type="radio" name="cv" id="f2" onclick="hida()">SingUp
+                </form>
+            </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pict/img1.jpg" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="pict/img3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pict/img4.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+        </div>
+        <div id="slide">
+            <button onclick="hide()" id="x">	&#9747</button>
+            <h4>Welcome User (:</h4>
+            <div class="b1">Home</div>
+            <div class="b1"><a href="me/aboutme.html">About me</a></div>
+            <div class="b1"><button onclick="login()">login && SingUp  </button> </div>
+        </div>
+        <section>
+            <div class="product">
+
+
+                <div class="hello">
+                    <h4>Gaming accessories</h4>
+                    <div class="par">
+                        <DIV class="child"> <img src="product/Chair.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/Headset.jpg" alt=""> </DIV>
+                    </div>
+                    <div class="par">
+                        <DIV class="child"><img src="product/Keyboard.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/mouse.jpg" alt=""> </DIV>
+                    </div>
+                </div>
+                <div class="hello">
+                    <h5>Comfy styles for her</h5>
+                    <div class="par">
+                        <DIV class="child"><img src="product/1.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/2.jpg" alt=""> </DIV>
+                    </div>
+                    <div class="par">
+                        <DIV class="child"><img src="product/3.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/4.jpg" alt=""> </DIV>
+                    </div>
+                </div>
+                <div class="hello">
+                    <h5>Frequently repurchased in Drugstore</h5>
+                    <div class="par">
+                        <DIV class="child"><img src="product/5.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/6.jpg" alt=""> </DIV>
+                    </div>
+                    <div class="par">
+                        <DIV class="child"><img src="product/7.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/8.jpg" alt=""> </DIV>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="product">
+                <div class="hello">
+                    <h5>Popular products in Apparel internationally</h5>
+                    <div class="par">
+                        <DIV class="child"><img src="product/13.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/14.jpg" alt=""> </DIV>
+                    </div>
+                    <div class="par">
+                        <DIV class="child"><img src="product/15.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/16.jpg" alt=""> </DIV>
+                    </div>
+                </div>
+                <div class="hello">
+                    <h5>for your Kids</h5>
+                    <div class="par">
+                        <DIV class="child"><img src="product/16.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/17.jpg" alt=""> </DIV>
+                    </div>
+                    <div class="par">
+                        <DIV class="child"><img src="product/18.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/19.jpg" alt=""> </DIV>
+                    </div>
+                </div>
+                <div class="hello">
+                    <h5>Gaming merchandise</h5>
+                    <div class="par">
+                        <DIV class="child"><img src="product/20.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/21.jpg" alt=""> </DIV>
+                    </div>
+                    <div class="par">
+                        <DIV class="child"><img src="product/22.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/23.jpg" alt=""> </DIV>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="product">
+                    <div class="hello">
+                        <h5>Popular products in Apparel internationally</h5>
+                        <div class="par">
+                            <DIV class="child"><img src="product/13.jpg" alt=""> </DIV>
+                            <DIV class="child"><img src="product/14.jpg" alt=""> </DIV>
+                        </div>
+                        <div class="par">
+                            <DIV class="child"><img src="product/15.jpg" alt=""> </DIV>
+                            <DIV class="child"><img src="product/16.jpg" alt=""> </DIV>
+                        </div>
+                    </div>
+                    <div class="hello">
+                        <h5>phone</h5>
+                        <div class="par">
+                            <DIV class="child"><img src="product/28.jpg" alt=""> </DIV>
+                            <DIV class="child"><img src="product/25.jpg" alt=""> </DIV>
+                        </div>
+                        <div class="par">
+                            <DIV class="child"><img src="product/26.jpg" alt=""> </DIV>
+                            <DIV class="child"><img src="product/27.jpg" alt=""> </DIV>
+                        </div>
+                    </div>
+                </div>
+                <div class="hello">
+                    <h5>International top sellers in Home Improvement</h5>
+                    <div class="par">
+                        <DIV class="child"><img src="product/9.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/10.jpg" alt=""> </DIV>
+                    </div>
+                    <div class="par">
+                        <DIV class="child"><img src="product/11.jpg" alt=""> </DIV>
+                        <DIV class="child"><img src="product/12.jpg" alt=""> </DIV>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <span id="head2"></span>
+        <div id="head">
+            <img src="logo.png" alt="">
+            <button>commencer pour essayer de 30 joures gratuit</button>
+            <h4 style="color: white; font-size: 25px;">Puis 9,99 € par mois. Offre réservée aux nouveaux <br> membres Amazon Music Unlimited. Voir conditions.
+            </h4>
+            <a href="#pict">
+                <div class="circle">
+                    <i class="fa fa-arrow-down" style="font-size:48px;color:rgb(0, 0, 0);"></i>
+                </div>
+            </a>
+        </div>
+        <div id="spo">
+            <div>
+                <h1>MAINTENANT EN HD SANS FRAIS SUPPLÉMENTAIRES</h1>
+            </div>
+            <div id="pict">
+                <div><img src="music/DV31_RTB_ListenOffline_HOL21_SW_3MoFree_DMUX-5120_JZ_500x500.png" alt="">
+                    <p>ACCÈS ILLIMITÉ À 90 MILLIONS <br> DE TITRES EN HD</p>
+                </div>
+                <div><img src="music/DV31_RTB_OnDemand_HOL21_SW_3MoFree_DMUX-5120_JZ_500x500.png" alt="">
+                    <p>MUSIQUE À LA DEMANDE,<br> TOUJOURS SANS PUBLICITÉ</p>
+                </div>
+                <div><img src="music/DV31_RTB_Songs_HOL21_SW_3MoFree_DMUX-5120_JZ_500x500.png" alt="">
+                    <p>ÉCOUTE HORS CONNEXION <br>AVEC ZAPPING ILLIMITÉ</p>
+                </div>
+                <div><img src="music/DV31_RTB_Podcasts_HOL21_SW_3MoFree_DMUX-5120_JZ_500x500.png" alt="">
+                    <p>DES MILLIONS D’ÉPISODES <br> DE PODCASTS</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sport">
+            <h1 style=" font-size: 50px;color: white;" id="sport">Section sport</h1>
+            <a href="#service"> <button style="width: 200px;height: 40px;background-color: #fce081;padding: 05px;border-radius: 10px;">EXPORE NOW</button>
+            </a>
+        </div>
+
+        <div class="service" id="service">
+
+            <div class="card" style="width: 18rem;">
+                <img src="sport/41-nc-alum-red-sport-red-s7.jpg" class="card-img-top" alt="..." class="scl">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="sport/download.jpg" class="card-img-top" alt="..." class="scl">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="sport/images.jpg" class="card-img-top" alt="..." class="scl">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+            <a href="">
+                <h1 style="width: 80px; height: 80px;background-color: white;display: flex;
+     justify-content: center;align-items: center;border-radius: 50%;flex-wrap: wrap;"><i class="fa fa-eye" aria-hidden="true"></i>
+                    <p style="color: red;">more</p>
+                </h1>
+        </div>
+        </a>
+
+        <div class="hiba">
+            <h1 style="text-align: center;">Service client</h1>
+            <DIV style="display: flex; justify-content: center;">
+                <button onclick="change();"><h2 >For Students</h2></button>
+                <button onclick="change();"><h2 >For Worker</h2></button>
+
+            </DIV>
+            <div class="ziaf" id="too">
+                <div class="love">
+                    <img src="service/1.png" alt="">
+                    <p>Free online training</p>
+                    <h5>Passez de l'apprentissage à la pratique grâce à plus de 500 cours de formation numérique gratuits élaborés par les experts d'AWS</h5>
+                </div>
+                <div class="love">
+                    <img src="service/2.png" alt="">
+                    <p>AWS Learning Recommendations</p>
+                    <h5>Commencez à créer dès aujourd'hui avec les guidesRamp-Up, qui proposent des ressources sélectionnéespour développer vos connaissances sur AWS</h5>
+                </div>
+                <div class="love">
+                    <img src="service/3.png" alt="">
+                    <p>AWS Certification</p>
+                    <h5>Développez votre carrière et votre entreprise grâce à des certificats reconnus par l'industrie et validant vos compétences en matière de cloud</h5>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div style="background-color: rgb(31, 188, 209);">
+
+            <!-- Grid container -->
+            <div class="container p-4" style="border-color: red;">
+                <!--Grid row-->
+                <div class="row mt-4">
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">About company</h5>
+
+                        <p>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+                        </p>
+
+                        <p>
+                            Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias.
+                        </p>
+
+                        <div class="mt-4">
+                            <!-- Facebook -->
+                            <a type="button" class="btn btn-floating btn-warning "><i class="fa fa-facebook-f"></i></a>
+                            <!-- Dribbble -->
+                            <a type="button" class="btn btn-floating btn-warning "><i class="fa fa-dribbble"></i></a>
+                            <!-- Twitter -->
+                            <a type="button" class="btn btn-floating btn-warning "><i class="fa fa-twitter"></i></a>
+                            <!-- Google + -->
+                            <!-- <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa fa-google-plus-g"></i></a>
+             Linkedin -->
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+                        <div class="form-outline form-white mb-4">
+                            <input type="text" id="formControlLg" class="form-control form-control-lg" placeholder="Good Give Me Evrythings">
+                            <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
+                            <div class="form-notch">
+                                <div class="form-notch-leading" style="width: 9px;"></div>
+                                <div class="form-notch-middle" style="width: 48.8px;"></div>
+                                <div class="form-notch-trailing"></div>
+                            </div>
+                        </div>
+
+                        <ul class="fa-ul" style="margin-left: 1.65em;">
+                            <li class="mb-3">
+                                <a href="https://www.bing.com/maps?q=sidi+moumen+casa+map&go=Rechercher&qs=ds&form=QBRE" style="color: black;"><span class="fa-li"><i class="fa fa-home"></i></span><span class="ms-2">Sidi Moumen, group:8, MR</span></a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="mailto:06a61874490@gmail.com" style="color: black;"> <span class="fa-li"><i class="fa fa-envelope"></i></span><span class="ms-2">06a61874490@gmail.com</span></a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="tel:+ 212630944864" style="color: black;"><span class="fa-li"><i class="fa fa-phone"></i></span><span class="ms-2">+ 212630944864</span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                        <table class="table text-center text-white">
+                            <tbody class="font-weight-normal">
+                                <tr>
+                                    <td>Mon - Thu:</td>
+                                    <td>8am - 9pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Fri - Sat:</td>
+                                    <td>8am - 1am</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday:</td>
+                                    <td>9am - 10pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <select>
+            <option value=""> <button onclick="change('en');">English</button></option>
+            <option value=""><button onclick="change('fr');">Francais</button></option>
+            <option value=""><button onclick="change('es');">Espanol</button></option>
+
+          </select>
+
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #37475a;">
+            © 2020 Copyright:
+            <a class="text-white" href="">RH-Amine.com</a>
+        </div>
+        <!-- Copyright -->
+    </div>
+
+
+
+
+
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
